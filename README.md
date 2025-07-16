@@ -1,5 +1,5 @@
-# Project 01  
-This is Project-01 for the Lede Program.  
+# Project 02  
+This is Project-02 for the Lede Program.  
 **Link to the project:** https://kenshokuremoto.github.io/Project2/
 
 ## Title  
