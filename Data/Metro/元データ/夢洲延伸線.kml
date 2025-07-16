@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>中央線</name>
+    <Style id="line-000000-1200-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.2</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-1200-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.8</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-1200-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-1200-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-1200-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>夢洲延伸線</name>
+      <styleUrl>#line-000000-1200-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          135.389633,34.6516913,0
+          135.3889678,34.65095,0
+          135.3885601,34.6502262,0
+          135.3884529,34.6496437,0
+          135.3887533,34.6484257,0
+          135.3893112,34.6470312,0
+          135.390663,34.6458308,0
+          135.3937958,34.6438713,0
+          135.4003404,34.639352,0
+          135.4010485,34.6390518,0
+          135.4016922,34.6388753,0
+          135.4025076,34.6387341,0
+          135.403323,34.6387517,0
+          135.4040955,34.6388753,0
+          135.4050826,34.6391578,0
+          135.4056405,34.6393166,0
+          135.4063915,34.6397933,0
+          135.4073785,34.6406937,0
+          135.4080223,34.641188,0
+          135.4085372,34.6413998,0
+          135.410683,34.6420354,0
+          135.4125713,34.6427062,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

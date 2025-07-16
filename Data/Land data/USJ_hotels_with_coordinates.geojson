@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ホテル名": "ザシンギュラリホテル&スカイスパ", "英語名": "The Singulari Hotel & Skyspa", "緯度": 34.667968, "経度": 135.438988, "客室数": "390 rooms", "ソース": "https://yado.knt.co.jp/st/S270310/" }, "geometry": { "type": "Point", "coordinates": [ 135.438988, 34.667968 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "ザパークフロントホテル", "英語名": "The Park Front Hotel at Universal Studios Japan", "緯度": 34.667746, "経度": 135.437149, "客室数": "598 rooms", "ソース": "https://yado.knt.co.jp/st/S270251/" }, "geometry": { "type": "Point", "coordinates": [ 135.437149, 34.667746 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "ホテル近鉄ユニバーサル・シティ", "英語名": "Hotel Kintetsu Universal City", "緯度": 34.668409, "経度": 135.43686, "客室数": "456 rooms", "ソース": "https://yado.knt.co.jp/st/S270087/" }, "geometry": { "type": "Point", "coordinates": [ 135.43686, 34.668409 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "オリエンタルホテル ユニバーサル・シティ", "英語名": "Oriental Hotel Universal City", "緯度": 34.668873, "経度": 135.437838, "客室数": "330 rooms", "ソース": "https://yado.knt.co.jp/st/S270500/" }, "geometry": { "type": "Point", "coordinates": [ 135.437838, 34.668873 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "ホテル京阪ユニバーサル・タワー", "英語名": "Hotel Keihan Universal Tower", "緯度": 34.667485, "経度": 135.437508, "客室数": "641 rooms", "ソース": "https://yado.knt.co.jp/st/S270089/" }, "geometry": { "type": "Point", "coordinates": [ 135.437508, 34.667485 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "ホテルユニバーサルポート", "英語名": "Hotel Universal Port", "緯度": 34.666174, "経度": 135.437702, "客室数": "600 rooms", "ソース": "https://yado.knt.co.jp/st/S270088/" }, "geometry": { "type": "Point", "coordinates": [ 135.437702, 34.666174 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "ホテルユニバーサルポートヴィータ", "英語名": "Hotel Universal Port Vita", "緯度": 34.667043, "経度": 135.438835, "客室数": "428 rooms", "ソース": "https://yado.knt.co.jp/st/S270358/" }, "geometry": { "type": "Point", "coordinates": [ 135.438835, 34.667043 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "ラ・ジェント・ホテル大阪ベイ", "英語名": "La'gent Hotel Osaka Bay", "緯度": 34.662635, "経度": 135.434633, "客室数": "129 rooms", "ソース": "https://yado.knt.co.jp/st/S270295/" }, "geometry": { "type": "Point", "coordinates": [ 135.434633, 34.662635 ] } },
+{ "type": "Feature", "properties": { "ホテル名": "リーベルホテル大阪", "英語名": "LIBER Hotel Osaka", "緯度": 34.661465, "経度": 135.432364, "客室数": "694 rooms", "ソース": "https://yado.knt.co.jp/st/S270404/" }, "geometry": { "type": "Point", "coordinates": [ 135.432364, 34.661465 ] } }
+]
+}

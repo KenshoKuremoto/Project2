@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:ksj="http://nlftp.mlit.go.jp/ksj/schemas/ksj-app" xmlns:gml="http://www.opengis.net/gml/3.2.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://nlftp.mlit.go.jp/ksj/jpgis/xsd/KsjAppSchema.xsd" elementFormDefault="qualified">
+  <!-- 外部参照 -->
+  <xsd:import namespace="http://www.opengis.net/gml/3.2.1" schemaLocation="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19136_Schemas/gml.xsd" />
+  <!-- 基底要素 -->
+  <xsd:element name="Dataset">
+    <xsd:complexType>
+      <xsd:complexContent>
+        <xsd:extension base="gml:AbstractFeatureType">
+          <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element ref="gml:AbstractGML" />
+            <xsd:element ref="gml:CompositeValue" />
+          </xsd:choice>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+  <!-- 要素定義 -->
+  <xsd:element name="TheNumberofTheStationPassengersGettingonandoff" type=" ksj:TheNumberofTheStationPassengersGettingonandoffType" substitutionGroup="gml:AbstractFeature" />
+  <xsd:complexType name="TheNumberofTheStationPassengersGettingonandoffType">
+    <xsd:annotation>
+      <xsd:documentation>駅別乗降客数</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence minOccurs="1" maxOccurs="1">
+          <xsd:element name="station" type="gml:CurvePropertyType">
+            <xsd:annotation>
+              <xsd:documentation>場所</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="stationName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>駅名</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="stationCode" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>駅コード</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="groupCode" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>グループコード</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="administrationCompany" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>運営会社</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="routeName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>路線名</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="railroadDivision" type="ksj:CodeofRailroadDivision">
+            <xsd:annotation>
+              <xsd:documentation>鉄道区分コード</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="railroadCompanyClassification" type="ksj:CodeofRailroadCompanyClassification">
+            <xsd:annotation>
+              <xsd:documentation>事業者種別コード</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2011" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2011</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2011" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2011</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2011" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2011</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2011" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2011</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2012" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2012</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2012" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2012</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2012" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2012</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2012" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2012</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2013" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2013</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2013" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2013</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2013" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2013</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2013" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2013</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2014" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2014</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2014" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2014</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2014" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2014</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2014" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2014</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2015" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2015</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2015" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2015</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2015" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2015</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2015" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2015</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2016" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2016</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2016" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2016</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2016" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2016</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2016" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2016</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2017" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2017</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2017" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2017</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2017" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2017</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2017" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2017</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2018" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2018</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2018" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2018</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2018" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2018</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2018" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2018</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2019" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2019</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2019" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2019</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2019" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2019</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2019" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2019</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2020" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2020</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2020" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2020</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2020" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2020</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2020" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2020</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="duplicate2021" type="ksj:CodeofDuplicate">
+            <xsd:annotation>
+              <xsd:documentation>重複コード2021</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name=" dataEorN2021" type="ksj:CodeofDataExistenceorNonexistence">
+            <xsd:annotation>
+              <xsd:documentation>データ有無コード2021</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="remarks2021" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>備考2021</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="passengers2021" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation>乗降客数2021</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="TheNumberofTheStationPassengersGettingonandoffPropertyType">
+    <xsd:sequence minOccurs="0">
+      <xsd:element ref="ksj:TheNumberofTheStationPassengersGettingonandoff" />
+    </xsd:sequence>
+    <xsd:attributeGroup ref="gml:AssociationAttributeGroup" />
+    <xsd:attributeGroup ref="gml:OwnershipAttributeGroup" />
+  </xsd:complexType>
+  <xsd:complexType name="TheNumberofTheStationPassengersGettingonandoffMemberType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractMemberType">
+        <xsd:sequence minOccurs="0">
+          <xsd:element ref="ksj:TheNumberofTheStationPassengersGettingonandoff" />
+        </xsd:sequence>
+        <xsd:attributeGroup ref="gml:AssociationAttributeGroup" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:simpleType name="CodeofRailroadDivision">
+    <xsd:annotation>
+      <xsd:documentation>鉄道区分コード</xsd:documentation>
+    </xsd:annotation>
+    <xsd:union memberTypes="ksj:CodeofRailroadDivisionEnumType    ksj:CodeofRailroadDivisionOtherType" />
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofRailroadDivisionEnumType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="11">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>普通鉄道JR</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="12">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>普通鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="13">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>鋼索鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="14">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>懸垂式鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="15">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>跨座式鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="16">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>案内軌条式鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="17">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>無軌条鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="21">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>軌道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="22">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>懸垂式モノレール</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="23">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>跨座式モノレール</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="24">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>案内軌条式</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="25">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>浮上式</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofRailroadDivisionOtherType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="other: \w{2,}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofRailroadCompanyClassification">
+    <xsd:annotation>
+      <xsd:documentation>事業者種別コード</xsd:documentation>
+    </xsd:annotation>
+    <xsd:union memberTypes="ksj:CodeofRailroadCompanyClassificationEnumType    ksj:CodeofRailroadCompanyClassificationOtherType" />
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofRailroadCompanyClassificationEnumType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>新幹線</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>JR在来線</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>公営鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>民間鉄道</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>第三セクター</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofRailroadCompanyClassificationOtherType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="other: \w{2,}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofDuplicate">
+    <xsd:annotation>
+      <xsd:documentation>重複コード</xsd:documentation>
+    </xsd:annotation>
+    <xsd:union memberTypes="ksj:CodeofDuplicateEnumType    ksj:CodeofDuplicateOtherType" />
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofDuplicateEnumType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>当該路線駅に記載</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>他路線駅に記載</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>駅なし</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofDuplicateOtherType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="other: \w{2,}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofDataExistenceorNonexistence">
+    <xsd:annotation>
+      <xsd:documentation>データ有無コード</xsd:documentation>
+    </xsd:annotation>
+    <xsd:union memberTypes="ksj:CodeofDataExistenceorNonexistenceEnumType    ksj:CodeofDataExistenceorNonexistenceOtherType" />
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofDataExistenceorNonexistenceEnumType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>データ有</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>データなし</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>非公開</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <gml:description>駅なし</gml:description>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeofDataExistenceorNonexistenceOtherType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="other: \w{2,}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
