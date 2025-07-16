@@ -23,7 +23,7 @@ To highlight this, I compared the Expo site with a nearby facility that shares s
 Data was primarily collected from official websites:
 
 - **Expo 2025:** [https://www.expo2025.or.jp/en/](https://www.expo2025.or.jp/en/)  
-- **Osaka Metro:** https://www.osakametro.co.jp/en/](https://www.osakametro.co.jp/en/)  
+- **Osaka Metro:** [https://www.osakametro.co.jp/en/](https://www.osakametro.co.jp/en/)  
 - **USJ:** [https://www.usj.co.jp/web/en/us](https://www.usj.co.jp/web/en/us)
 
 ### GeoJSON Data Creation:
